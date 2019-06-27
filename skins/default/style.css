@@ -1,0 +1,100 @@
+/* OUTLINE */
+/* COLOR: #fff, #eee, #ddd, #ccc, #aaa, #999, #000, #282828*/
+/* BOOTSTRAP: #5cb85c, #337ab7, #5bc0de, #f0ad4e, #d9534f */
+h1,h2,h3,h4,h5{font-family:Oswald, Arial, Helvetica;color:#282828;}
+h1{font-size:36px;}
+h2{font-size:26px;color:#282828;}
+h3{font-size:20px;}
+body{background:#fff;margin:0}
+th {text-align:left}
+
+/* CONTENTS */
+#body_left{padding-right:20px; padding-bottom:90px;padding-top:20px;}
+#body_right,#body_right h1,#body_right h2,#body_right h3,#body_right h4,#body_right p{color:#666;}
+#body_right{line-height:150%;padding-bottom:90px;}
+#body_right ul li{line-height:150%;}
+#body_right a{text-decoration:none;}
+#body_right a:hover{text-decoration:underline;}
+#body_right h3{margin:25px 0 10px 0;font-size:20px}
+#body_right > div:first-child{margin-top:20px;}
+#footer{background:#111;color:#eee;padding:20px 0}
+#footer h4{font:17px Oswald;color:#eee;}
+#footer_content li a,#footer_content li{color:#999}
+.pg_main_image{border:solid 5px #fff;outline:solid 1px #888;box-shadow: 0 0 5px #888888;background:#fff;margin:15px 20px 10px -20px;transform:rotate(-3deg);float:left}
+
+/* WELCOME */
+#welcome{padding-bottom:90px}
+
+/* LISTING LIST */
+.cat_list>div>div {padding:3px;height:58px;margin-bottom:15px;border:solid 1px #bbb;-webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.3);-moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.3);box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.3);}
+.cat_list>div>div i{font-size: 9px}
+.cat_list img {height:50px; width:55px; overflow:hidden; padding-right:5px;}
+#search_filter select{max-width:100%}
+#search_filter_main_form {margin-bottom: 20px}
+
+.discount{font:bold italic 14px Georgia,Times New Roman,Serif;color:#666;text-align: center}
+.feat_price{font:bold 15px Arial,Sans-Serif;color:#666}
+.msrp_price{font:12px Arial;color:#000}
+.price_tax{font-size:10px;border:solid 1px #888;border-radius:6px;text-align:center;padding:0px 6px;}
+.price_tax:empty{display:none}
+.list_search{padding:5px}
+.list_search_opt{padding:5px; margin-bottom:15px}
+.listbox_price{text-align:center;color:#080;font-size:20px;}
+
+.list_item{margin-bottom:15px;padding:10px;border:solid 1px #bbb;-webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.3);-moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.3);box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.3);position:relative;}
+.list_item a {text-decoration:none}
+.list_item a:hover{text-decoration:underline}
+
+.gridbox {height:340px;}
+.gridbox_img{height:200px}
+.gridbox_txt{margin-bottom:5px;}
+.gridbox_price{color:#080;font-size:20px;}
+
+.ribbon{position:absolute;right:-5px;top:-5px;z-index:1;overflow:hidden;width:75px;height:75px;text-align:right;display:block}
+.ribbon span{font-size:10px;font-weight:700;color:#FFF;text-transform:uppercase;text-align:center;line-height:20px;transform:rotate(45deg);-webkit-transform:rotate(45deg);width:100px;display:block;background:#F70505;position:absolute;top:19px;right:-21px}
+.ribbon span::before{content:"";position:absolute;left:0;top:100%;z-index:-1;border-left:3px solid #8F0808;border-right:3px solid transparent;border-bottom:3px solid transparent;border-top:3px solid #8F0808}
+.ribbon span::after{content:"";position:absolute;right:0;top:100%;z-index:-1;border-left:3px solid transparent;border-right:3px solid #8F0808;border-bottom:3px solid transparent;border-top:3px solid #8F0808}
+
+.cf_list{display: inline-block;margin:0 1px 1px 0;font-size:12px;font-weight: 400;text-overflow: ellipsis;max-width: 100%;overflow: hidden;}
+.cf_list a{color:#fff;font-size:12px}
+
+/* LISTING DETAILS */
+.detail_left{text-align:center}
+.detail_left div:first-child{width:auto;float:none}
+.detail_left div{width:140px;float:left;margin-right:5px}
+.detail_price_tax{font-size:16px; text-align:left;paddding:30px;float:left;border:solid 1px #ddd;padding:2px 10px;border-radius:3px;}
+.detail_price{font-size:16pt;float:left;margin-right:10px}
+.cf_table{border:none}
+.cf_table td, .cf_table th{padding:5px 0;border-bottom:solid 1px #ccc}
+.cf_table th{font-weight:bold;text-align:left}
+.cf_table tr:last-child td,.cf_table tr:last-child th {border-bottom:none}
+h1.title{color:#003}
+ul.list_button{list-style:none;margin:0;padding:0}
+ul.list_button li{margin:25px 0}
+h1>small>button:empty{display:none;}
+h3.cf_div{padding:0;margin:0}
+
+/* Bootstrap XS */
+@media screen and (max-width: 767px) {
+body{margin:0}
+.detail_left div{width:auto;float:none}
+.pg_main_image{float:none;margin-left:10px}
+.gridbox{height:auto;max-width:270px;margin:0 auto 10px auto;overflow-x:hidden;}
+.gridbox_img{height:auto}
+}
+
+/* Bootstrap SM */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+.detail_left div{width:120px;float:left;margin-right:5px}
+.gridbox{height:320px;}
+.gridbox_img{height:170px}
+}
+
+/* Bootstrap MD */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+.detail_left div{width:110px;float:left;margin-right:5px}
+.gridbox{height:330px;}
+.gridbox_img{height:180px}
+}
+
+/* Bootstrap LG is the default css */

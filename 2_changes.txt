@@ -1,0 +1,194 @@
+Version 7.0.1:
+[CE] Reformat the code to PSR-2
+
+Version 7.0:
+[CE] Mostly rebuild everything from scratch to improve performance
+[CE] Mandatory bug fixes which may cause new bugs :)
+[CE] Change custom field table structure to allow more flexible management
+[CE] Simplify area management (country, state, city)
+[CE] Simplify tax rate
+[CE] Simplify order ID generation, no more random ID
+[CE] Simplify manufacturer info
+[CE] New: Multiple tax rate
+[CE] New: Smart search
+[CE] New: Price filter slider
+[CE] New: Display price with tax
+[CE] Drop: Product Option feature
+[CE] Drop: Multiple currency support
+[CE] Drop: Shipping fee by area
+[CE] Drop: Store wide discount
+[QE] Updated to qEngine 16.2, there are too many changes to list, please refer to qEngine Changes log to see them
+
+Version 6.1.0:
+[CE] USPS shipping method with automatic rate calculator
+[CE] Updated to qEngine 11.1
+[CE] Mostly bug fixes & optimization
+[QE] Bug fixes
+[QE] Less images, more glyphicon
+[QE] New feature: watermark
+[QE] New feature: hidden pages can be displayed in page list & search, but content still hidden
+
+Version 6.0.0:
+[CE] Updated to qEngine 11.0
+[CE] Mostly bug fixes & optimization
+[CE] Rename some table names for better consistency
+[QE] Bug fixes
+[QE] New status for page: draft, published: public, member only, admin only
+[QE] Content type now have: default sorting method
+[QE] Improved qComments
+[QE] qComments now using ajax & can be approved by email
+[QE] Site Slogan!
+[QE] Modules are now easier to edit & manage
+[QE] Popup shortcuts to manage modules if you are logged in as admin
+[QE] New debug information: tpl files used
+
+Version 5.0.0:
+[CE] Updated to qEngine 9.0
+[CE] Bug fixes
+[QE] Bug fixes
+[QE] Replace Flash charts with HTML5 charts (chartjs.org)
+[QE] Starting to use bootstrap grid system, I hope in the future I can implement more bootstrap grid
+[QE] ACP minor redesign, perhaps in qE10 I will introduce new ACP ?
+[QE] Menu editor now can include another menu as sub menu
+[QE] I'm learning JavaScript, so I will implement more javascript starting from this version
+[QE] Restructure some files & folders
+
+Version 4.0.0:
+[QE] Updated to qEngine 7.0
+[QE] Updated template engine (faster)
+[QE] Removed guest book (who still use it?)
+[CE] Updated the skin to use BootStrap instead
+[CE] Added 'Payment Fee'
+[CE] Added social network integration
+
+Version 3.0.0 (Cart Engine):
+[QE] Updated to qEngine 6.0
+[QE] Add ACP notification center
+[QE] Add ACP qadmin log
+[QE] Update default & admin skin
+[QE] Update SEF URL to friendlier version
+[QE] Update security by using SHA-512 hashing+sitewide salt
+[QE] Update default skin to responsive layout
+[QE] Update module engine
+[QE] Update menu engine
+[QE] Update page management now consisting pages, news, module contents, etc.
+[QE] Update uploader by only accepting certain files (instead of blocking certain files)
+[QE] Remove unnecessary features, such as tag cloud, fast search, etc.
+[QE] Remove cookies, and replaced by PHP sessions (still need a single cookie though)
+[QE] Fix qcache performance when it's disabled
+[QE] Fix PNG optimizer for transparent PNG's
+[QE] Fix some bugs
+[QE] And many more. Incompatible with previous versions! Too lazy to make an upgrader :)
+[C3] Well, there are too many updates & bug fixes in this version, so I can't list it one-by-one, here some big updates I can remember:
+[C3] Modules, modules, modules, everything is now a module, including payment gateway, shipping gateway, etc
+[C3] New tax calculation & exemption
+[C3] Ajax based product list & search
+[C3] Ajax based product editor
+[C3] New skin based on qE's default one
+[C3] Everything is even simpler & easier to use (as if Cart 2 was not easy to use?)
+[C3] Fix some bugs
+[C3] And many more. Incompatible with previous versions! Too lazy to make an upgrader :)
+
+Version 2.3.6:
+[QE] Renamed /etc/ folder to /misc/ - some servers don't allow user access to /etc/ folder
+
+Version 2.3.5:
+[QE] Minor fixes
+[C2] Minor fixes
+[C2] Invalid date error when editing a coupon - http://www.c97.net/forum/index.php?topic=397.0 (thanks philmcdonnell)
+[C2] Wrong URL for News when ADP enabled - http://www.c97.net/forum/index.php?topic=385.0
+[C2] Blank page after installation - http://www.c97.net/forum/index.php?topic=400.0
+[C2] PHP error when using the "�" Symbol - http://www.c97.net/forum/index.php?topic=433.0
+[C2] Express Checkout should not be able to edit address - http://www.c97.net/forum/index.php?topic=436.0
+[C2] UTF-8 for email messages - http://www.c97.net/forum/index.php?topic=441.0
+[C2] Custom date & time words - http://www.c97.net/forum/index.php?topic=444.0
+[C2] NEW! Payment gateway: Click-n-Stash (thanks bwc2)
+
+Version 2.3:
+[QE] NEW! Upgrade to qEngine 4.0
+[QE] Minor fixes
+[QE] Replace guestbook with qComment
+[QE] New skin folder: _common, to simplify skin designing
+[QE] Replace prototype.js with jquery.js
+[QE] Page menu now can be placed in four positions
+[QE] Module now can be placed in eight positions
+[C2] Fix Other minor fixes
+[C2] Fix Bulk Upload
+[C2] Fix List all product
+[C2] Fix UTF8 problem
+[C2] NEW? Nothing new, simply want to upgrade to qE4.0. Wait for 2.6 for more new features!
+
+Version 2.2:
+[C2] Fix "Notice: Undefined variable: foo in XXXXXXX on line 595"
+[C2] Fix Price includes tax
+[C2] Fix Tax not calculating Correctly
+[C2] Fix USPS bugs
+[C2] Fix RSS link
+[C2] Fix RSS output
+[C2] Fix Coupon creation email bug
+[C2] Fix Coupon "Remove all claimed" bug
+[C2] Fix Optimize DB
+[C2] Fix Shop search
+[C2] Fix SKU as optional
+[C2] NEW! More SKU integration (searchable from UI & ACP)
+[C2] NEW! More multiple category integration (searchable from UI & ACP)
+[C2] NEW! Choose order of category list
+[C2] NEW! Copy products (option: with cf & images)
+[C2] NEW! Qty box always visible
+[C2] NEW! Control number of download
+[QE] Upgrade to qEngine 3.5
+[QE] More fix for qEngine 3.5 (3.5.1)
+
+Version 2.1:
+[C2] NEW! SKU *
+[C2] NEW! Additional categories *
+[C2] NEW! Quick product editor
+[C2] NEW! BB code generator
+[C2] Fix category separator
+[C2] Reorganize ACP menu
+[C2] Replace ereg() with preg() -- except for USPS module
+[QE] Fix cache behaviour
+[QE] Add auto-recache for qadmin
+[QE] After sending email in ACP, return to correct page instead of previous page
+[QE] Captcha automatically revert back to GD1 if TTF not supported by GD2
+
+Version 2.01:
+[C2] No longer send email if there is no digital product
+
+Version 2.xx:
+[C2] New name! Cart97 version 2.0 aka Cart2.
+[C2] Streamlining everything, makes it simpler, removing unnecessary features, in the spirit of Windows 7.
+
+Version 2.00:
+[QE] Fix url_to_array function for returning wrong values
+[XC] New ACP skin
+[XC] Add EditArea editor to file manager
+[XC] Fix Manual Transaction because of Order ID changes
+[XC] Fix Manual Transaction for can't creating new user
+[QE] Fix PNG problem that affects PHP 5.1
+[XC] Fix Bulk Upload for not registering cf_value
+[QE] Fix newsletter template
+[XC] Some small fixes
+[XC] Fix confirmed.php for not registering some orders
+[XC] Fix user_init.php because of secure url conflict
+[QE] Fix register_process.php to redirect to checkout.php
+[XC] Add user group support, so you can send different newsletter and set different price for each group *
+[XC] Fix confirmed.php & trx_process.php, for sending digital products email even if the products aren't digital
+[XC] Add CSV export in trx_report.php
+[XC] Fix demo mode (for ACP)
+[XC] Fix Manual Transaction for displaying empty billing address
+[QE] Add captcha to: custom form (optional) & tell friend *
+[XC] Upgrade ADP 2.0 to SEO URL (was SEF URL)
+[XC] Fix "Helpful Comments" in review_list.tpl
+[XC] Fix "Remove" from checkout
+[XC] Add unlimited gift coupon
+
+Version 1.10:
+[QE] Fix qAdmin for page's additional images.
+[QE] Fix qAdmin for not recognizing textarea (useful in Custom Form, not in ACP).
+[QE] Fix cloud tag generator (function.php)
+[QE] Fix logo upload CHMOD (qe_config_process.php)
+[XC] Fix User Center (ACP) for not displaying page list.
+[XC] Fix grammar
+
+*) means database structure changing

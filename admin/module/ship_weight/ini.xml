@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<qmodule type="module" version="1.0.0">
+	<name>By Weight (manual calculation)</name>
+	<!-- make sure the 'type' is shipping -->
+	<type>shipping</type>
+	<id>ship_weight</id>
+	<author>C97.net</author>
+	<copyright>C97.net. All rights reserved.</copyright>
+	<license>Commercial</license>
+	<authorEmail>contact@c97.net</authorEmail>
+	<authorUrl>www.c97.net</authorUrl>
+	<version>2.0.0</version>
+	<description>A really simple shipping gateway for By Weight, need to manually enter rates in configuration screen.</description>
+	<install>
+		<query></query>
+	</install>
+	<uninstall>
+		<query></query>
+	</uninstall>
+	<config>
+		<configId>fee</configId>
+		<configValue>a:4:{s:4:"city";s:2:"10";s:5:"state";s:2:"20";s:7:"country";s:2:"30";s:5:"world";s:2:"40";}</configValue>
+	</config>
+</qmodule>

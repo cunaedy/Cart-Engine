@@ -1,0 +1,92 @@
+<a name="top"></a>
+<h1>Documentation of CE Core Module (CECM)</h1>
+
+<h2>Introduction</h2>
+<p>This is a multipurpose module for Cart Engine. This module contains support for product feature, custom field, and sub product.</p>
+
+<h2>Usage</h2>
+<p>This module is a multipurpose module for Cart Engine (CECM). Therea are various features in this module to enrich the CE experience.</p>
+<p>You can use Module Manager or edit the template directly to add this module to your CE installation.</p>
+
+<h3>Featured Products</h3>
+<p>To display list of products using CECM:</p>
+<p class="code">&lt;!-- BEGINMODULE ce_core --&gt;<br />
+mode = product_list<br />
+items = ( random | best | newest | see_also | cat_featured | site_featured | history | <i>list_of_item_id</i> )<br />
+out_of_stock = ( 0 | 1 )<br />
+limit = <i>number of products to display</i><br />
+display = ( small | big | slideshow | slider | list_small )<br />
+tag = ( new | best | promo )<br />
+&lt;!-- ENDMODULE ce_core --&gt;</p>
+
+<p>Parameters:</p>
+<ul>
+	<li>items
+		<ul>
+			<li>random: display random products</li>
+			<li>best: display best seller products</li>
+			<li>newest: display newest products</li>
+			<li>see_also: display 'see also' products for a specific product (in product detail screen)</li>
+			<li>cat_featured: display featured products for a specific category (in product list screen)</li>
+			<li>site_featured: display site-wide featured products</li>
+			<li>history: display history of user visited products</li>
+			<li><i>list_of_item_id</i>, eg: 1,2,3,4,5: display specific products, separated with commas.</li>
+		</ul></li>
+	<li>out_of_stock: 0 = hide out of stock products (default), 1 = also display out of stock products</li>
+	<li>limit: 10 = limit number of products to display (default 10)</li>
+	<li>display
+		<ul>
+			<li>small: display in small design</li>
+			<li>big: display in bigger design</li>
+			<li>slideshow: display in slideshow design</li>
+			<li>slider: display in slider design</li>
+			<li>list_small: display in vertical list with small thumbnail</li>
+		</ul></li>
+	<li>tag
+		<ul>
+			<li>new: display 'new' tag</li>
+			<li>best: display 'hot' tag</li>
+			<li>promo: display 'promo' tag</li>
+		</ul></li>
+	<li>PS: some parameters may not be able to be combined with other parameters, eg: <i>tag</i> parameter can only be used with <i>display</i> small &amp; big.</li>
+</ul>
+
+<p>Examples:</p>
+<p class="code">&lt;!-- BEGINMODULE ce_core --&gt;<br />
+mode = product_list<br />
+items = best<br />
+display = big<br />
+tag = best<br />
+&lt;!-- ENDMODULE ce_core --&gt;</p>
+<hr />
+<p class="code">&lt;!-- BEGINMODULE ce_core --&gt;<br />
+mode = product_list<br />
+items = 1,2,3,4,5<br />
+display = slider<br />
+&lt;!-- ENDMODULE ce_core --&gt;</p>
+
+<h3>Sub Products</h3>
+<p>You can also use CECM to display list of sub products for a specific product.</p>
+<p class="code">&lt;!-- BEGINMODULE ce_core --&gt;<br />
+mode = sub_product<br />
+item_id = <i>the item id</i><br />
+&lt;!-- ENDMODULE ce_core --&gt;</p>
+
+<p>Examples:</p>
+<p class="code">&lt;!-- BEGINMODULE ce_core --&gt;<br />
+mode = sub_product<br />
+item_id = 123<br />
+&lt;!-- ENDMODULE ce_core --&gt;</p>
+
+<h3>Custom Fields</h3>
+<p>You can also use CECM to display list of custom fields for a specific product.</p>
+<p class="code">&lt;!-- BEGINMODULE ce_core --&gt;<br />
+mode = custom_field<br />
+item_id = <i>the item id</i><br />
+&lt;!-- ENDMODULE ce_core --&gt;</p>
+
+<p>Examples:</p>
+<p class="code">&lt;!-- BEGINMODULE ce_core --&gt;<br />
+mode = custom_field<br />
+item_id = 123<br />
+&lt;!-- ENDMODULE ce_core --&gt;</p>
