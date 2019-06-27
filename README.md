@@ -36,4 +36,4 @@ If you feel the script is useful, consider purchasing the commercial license: ht
 *You can still use the script for free, but I will be very grateful if you purchase the license. Also you will receive personal support from me.*
 
 ## Let's Get Started!
-For installation guide, running for the first time, please visit https://github.com/cunaedy/Kemana-Directory/wiki/Getting-Started
+For installation guide, running for the first time, please visit https://github.com/cunaedy/Cart-Engine/wiki/10.-Getting-Started
