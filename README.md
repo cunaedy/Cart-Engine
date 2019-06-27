@@ -2,8 +2,11 @@
 Open your own online shop with Cart Engine!\
 The **free**, lightweight, yet powerful shopping cart based on PHP & MySQL.
 
-## Features
 Unique features of Cart Engine include: CMS engine based on our qEngine, product options, custom fields, digital products, search engine friendly URL, user friendly administration control panel, easy to use custom fields, module expandable, sub products, unsurpassed flexibility...and more.
+
+![Cart Engine Hero](https://www.c97.net/public/image/ce_hero.png)
+
+## Features
 
 **qEngine CMS**\
 Based on qEngine, a CMS script made by us. Providing the best of two worlds, a multi purpose CMS engine to allow maximum flexibility; and an e-commerce power for uncompromised features. With module supports to add new features easily.
