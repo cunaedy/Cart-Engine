@@ -32,7 +32,7 @@ if (qhash($visual) != qvc_value()) {
 }
 
 // verify
-$row = sql_qquery("SELECT * FROM ".$db_prefix."user WHERE user_id='$admin_id' LIMIT 1");
+$row = sql_query("SELECT * FROM ".$db_prefix."user WHERE user_id='$admin_id' LIMIT 1");
 $level = $row['admin_level'];
 if (!$level) {
     kickme();
