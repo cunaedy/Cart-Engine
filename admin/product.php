@@ -93,6 +93,14 @@ function get_cf($cat_id, $cf_val)
             case 'div':
                 $field = '<b>'.$row['cf_title'].'</b>';
             break;
+
+            case 'wysiwyg':
+                $field = rte_area($key, $val);
+            break;
+
+            default:
+                $field = 'Unknown type: '.$row['cf_type'];
+            break;
         }
 
         $row['cf_field'] = $field;
