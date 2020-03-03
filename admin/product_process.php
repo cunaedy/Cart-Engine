@@ -211,6 +211,8 @@ switch ($mode) {
     break;
 }
 
+// refresh smart search db
+create_search_cache($item_id);
 
 // permalink
 if (($mode == 'new') || (($mode == 'edit') && ($old['permalink'] != $permalink)) || (empty($permalink))) {
